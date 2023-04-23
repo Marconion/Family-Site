@@ -134,7 +134,9 @@ section {
     // height: auto;
   }
 }
-
+.col {
+  position: relative;
+}
 .col p {
   color: var(--color-black);
 }
@@ -246,6 +248,9 @@ section {
 }
 
 @media screen and (max-width: 768px) {
+  .title p {
+    padding-bottom: 50px;
+  }
   #features {
     position: relative;
     padding: 40px 0 0 0;
@@ -258,14 +263,15 @@ section {
       justify-content: center;
     }
     img {
-      width: 220px;
+      width: 180px;
       border: 7px solid #1d322b;
       // height: auto;
     }
   }
   .col p {
     color: var(--color-black);
-    font-size: 20px;
+    font-size: 15px;
+    line-height: 1.5;
   }
 
   .golden-nested {
