@@ -186,7 +186,7 @@ section {
 
 .container-fluid {
   margin: 0;
-  padding: 0;
+  padding: 0 10px;
 }
 #bottom {
   background-image: url(img/pexels-golden-jojo-2409038.jpg);
@@ -254,7 +254,8 @@ section {
   color: var(--color-primary-light);
 }
 
-//Responsivness
+///////////////////
+// Responsivness //
 
 @media screen and (max-width: 768px) {
   #navigation {
@@ -278,7 +279,7 @@ section {
       justify-content: center;
     }
     img {
-      width: 180px;
+      width: 160px;
       border: 7px solid #1d322b;
       // height: auto;
     }

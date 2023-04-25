@@ -184,7 +184,7 @@ section {
 
 .container-fluid {
   margin: 0;
-  padding: 0;
+  padding: 0 10px;
 }
 
 #bottom {
@@ -266,7 +266,7 @@ section {
     justify-content: center;
   }
   #features img {
-    width: 180px;
+    width: 160px;
     border: 7px solid #1d322b;
   }
   .col {
