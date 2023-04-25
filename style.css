@@ -224,6 +224,22 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: scale 5s forwards cubic-bezier(0.5, 1, 0.89, 1), fade-in 3s;
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    filter: blur(4px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
 }
 
 .container {
@@ -325,7 +341,7 @@ section {
   }
   #features img {
     width: 160px;
-    border: 7px solid #1d322b;
+    border: 5px solid #1d322b;
   }
   .row {
     display: flex;
@@ -352,6 +368,17 @@ section {
     position: absolute;
     width: 250px;
     z-index: -1;
+  }
+  .circle-prop {
+    max-width: 100%;
+    border: 0 !important;
+    top: 40px;
+    right: 96px;
+    scale: 1.5;
+    opacity: 0.4;
+    overflow: hidden;
+    position: absolute;
+    border: none;
   }
   .navbar {
     background-color: var(--color-primary-light);
