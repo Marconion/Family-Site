@@ -21,10 +21,6 @@
   background-color: var(--color-main);
 }
 
-html {
-  // overflow: hidden;
-}
-
 body {
   // overflow: clip;
   font-family: "Libre Baskerville", serif;
@@ -115,7 +111,7 @@ header {
 p {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.5rem;
-  // font-weight: 600;
+  font-weight: 300;
   line-height: 3rem;
 }
 section {
@@ -131,7 +127,7 @@ section {
   padding: 100px 100px;
   height: 920px;
   p {
-    color: var(--color-main);
+    color: var(--color-white);
     padding-bottom: 150px;
   }
 }
@@ -147,6 +143,11 @@ section {
     align-items: center;
     justify-content: center;
   }
+  .container-fluid h1 {
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+  }
   img {
     max-width: 250px;
     border: 7px solid #1d322b;
@@ -156,6 +157,18 @@ section {
   display: flex;
   justify-content: space-around;
 }
+
+#gallery {
+  height: auto;
+  background-color: var(--color-primary-light);
+}
+.card-body {
+  background-color: var(--color-primary-light);
+  padding: 0;
+}
+// .card-body p {
+//   color: var(--color-primary-light);
+// }
 .row {
   margin-right: 0;
 }
@@ -323,6 +336,9 @@ section {
     filter: brightness(0.9);
     padding: 10px 20px;
     opacity: 1;
+  }
+  .navbar-nav {
+    align-items: center;
   }
   .navbar-brand {
     h1 {

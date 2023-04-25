@@ -109,6 +109,7 @@ header {
 p {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.5rem;
+  font-weight: 300;
   line-height: 3rem;
 }
 
@@ -127,7 +128,7 @@ section {
   height: 920px;
 }
 .title p {
-  color: var(--color-main);
+  color: var(--color-white);
   padding-bottom: 150px;
 }
 
@@ -141,6 +142,11 @@ section {
   align-items: center;
   justify-content: center;
 }
+#features .container-fluid h1 {
+  display: flex;
+  padding: 30px;
+  justify-content: space-around;
+}
 #features img {
   max-width: 250px;
   border: 7px solid #1d322b;
@@ -149,6 +155,16 @@ section {
 .feature-images {
   display: flex;
   justify-content: space-around;
+}
+
+#gallery {
+  height: auto;
+  background-color: var(--color-primary-light);
+}
+
+.card-body {
+  background-color: var(--color-primary-light);
+  padding: 0;
 }
 
 .row {
@@ -301,6 +317,9 @@ section {
     filter: brightness(0.9);
     padding: 10px 20px;
     opacity: 1;
+  }
+  .navbar-nav {
+    align-items: center;
   }
   .navbar-brand h1 {
     font-size: 25px;
