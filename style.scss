@@ -292,10 +292,13 @@ section {
     width: 100%;
     padding: 3%;
   }
-  .copyright p {
-    color: var(--color-primary-light);
-    text-align: center;
-  }
+}
+.copyright p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-primary-light);
+  text-align: center;
 }
 
 //Utility classes
@@ -521,3 +524,12 @@ section {
     transition: transform 0.5s;
   }
 }
+// @media screen and (min-width: 992px) {
+//   .copyright p {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     color: var(--color-primary-light);
+//     text-align: center;
+//   }
+// }
