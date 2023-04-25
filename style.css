@@ -127,9 +127,45 @@ section {
   padding: 100px 100px;
   height: 920px;
 }
+.title h2 {
+  transform: scale(0.85);
+  animation: scale 5s forwards cubic-bezier(0.5, 1, 0.89, 1), fade-in 3s;
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    filter: blur(4px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
 .title p {
   color: var(--color-white);
   padding-bottom: 150px;
+  transform: scale(0.85);
+  animation: scale 5s forwards cubic-bezier(0.5, 1, 0.89, 1), fade-in 3s;
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    filter: blur(4px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
 }
 
 #features {
@@ -144,7 +180,7 @@ section {
 }
 #features .container-fluid h1 {
   display: flex;
-  padding: 30px;
+  padding: 30px 0;
   justify-content: space-around;
 }
 #features img {
@@ -165,10 +201,6 @@ section {
 .card-body {
   background-color: var(--color-primary-light);
   padding: 0;
-}
-
-.row {
-  margin-right: 0;
 }
 
 .col {
@@ -294,6 +326,14 @@ section {
   #features img {
     width: 160px;
     border: 7px solid #1d322b;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .row-cols-2 > * {
+    width: 90%;
   }
   .col {
     overflow: hidden;
