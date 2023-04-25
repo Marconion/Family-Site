@@ -284,6 +284,7 @@ section {
     position: relative;
     background-color: var(--color-primary-light);
     z-index: -2;
+    height: auto;
   }
   #features .features-pos {
     display: flex;
@@ -358,6 +359,7 @@ section {
   }
   #features {
     position: relative;
+    height: auto;
     background-color: var(--color-primary-light);
     z-index: -2;
   }

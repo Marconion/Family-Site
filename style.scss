@@ -137,6 +137,7 @@ section {
   // padding: 20px 0 0 0;
   background-color: var(--color-primary-light);
   z-index: -2;
+  // height: auto;
 
   .features-pos {
     display: flex;
@@ -295,6 +296,7 @@ section {
     // padding: 40px 0 0 0;
     background-color: var(--color-primary-light);
     z-index: -2;
+    height: auto;
 
     .features-pos {
       display: flex;
@@ -380,7 +382,7 @@ section {
   }
   #features {
     position: relative;
-    // padding: 40px 0 0 0;
+    height: auto;
     background-color: var(--color-primary-light);
     z-index: -2;
 
