@@ -142,8 +142,17 @@ section {
   justify-content: center;
 }
 #features img {
-  max-width: 200px;
+  max-width: 250px;
   border: 7px solid #1d322b;
+}
+
+.feature-images {
+  display: flex;
+  justify-content: space-around;
+}
+
+.row {
+  margin-right: 0;
 }
 
 .col {

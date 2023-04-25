@@ -21,14 +21,17 @@
   background-color: var(--color-main);
 }
 
+html {
+  // overflow: hidden;
+}
+
 body {
-  // height: 4000px;
+  // overflow: clip;
   font-family: "Libre Baskerville", serif;
   color: var(--color-main);
   height: 100vh;
   background: url("img/Family-16-Exposure.jpg") no-repeat center center/cover;
   backdrop-filter: blur(3px);
-
   color: var(--color-white);
 }
 
@@ -145,9 +148,16 @@ section {
     justify-content: center;
   }
   img {
-    max-width: 200px;
+    max-width: 250px;
     border: 7px solid #1d322b;
   }
+}
+.feature-images {
+  display: flex;
+  justify-content: space-around;
+}
+.row {
+  margin-right: 0;
 }
 .col {
   position: relative;
@@ -281,9 +291,12 @@ section {
     img {
       width: 160px;
       border: 7px solid #1d322b;
+
       // height: auto;
     }
   }
+  // .feature-images {
+  // }
   .col {
     overflow: hidden;
   }
