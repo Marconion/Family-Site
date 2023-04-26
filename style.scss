@@ -29,6 +29,24 @@ body {
   background: url("img/Family-16-Exposure.jpg") no-repeat center center/cover;
   backdrop-filter: blur(3px);
   color: var(--color-white);
+  animation: scale 5s forwards cubic-bezier(0.5, 1, 0.89, 1), fade-in 3s;
+  @keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      filter: blur(4px);
+    }
+
+    100% {
+      opacity: 1;
+      filter: blur(0px);
+    }
+  }
 }
 
 h1 {
