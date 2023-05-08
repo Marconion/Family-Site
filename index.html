@@ -32,95 +32,104 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section id="navigation" class="">
-      <nav class="navbar navbar-expand-lg fixed-top curved-nav">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Family Event Place</a>
+          <a class="navbar-brand" href="#">Family Event Centre</a>
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav me-auto navigation">
-              <a class="nav-link" aria-current="page" href="#">Pocetna strana</a>
-              <a class="nav-link" href="#features">O nama</a>
-              <a class="nav-link" href="galerija.html">Galerija</a>
-              <a class="nav-link" href="#bottom">Kontakt</a>
-            </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Pocetna strana</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O nama</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galerija.html">Galerija</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kontakt</a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
-
-      <div class="title layered-image" id="title">
-        <div class="golden-nested">
-          <img class="golden-circle rotate" style="max-width: 100%" src="img/golden-circle.png" alt="" />
-          <h2 class="text-shadow-white" style="color: var(--color-main)">Dobrodosli</h2>
-        </div>
-        <p class="text-shadow-black">
-          Dobrodosli na oficijalnu prezentaciju <br />
-          "Family Event Place"
-        </p>
-        <div>
-          <a class="btnc" href="#features">O nama</a>
-        </div>
+    </header>
+    <section id="title">
+      <div class="logo">
+        <!-- <img class="logo-img" src="img/Family logo gold.png" alt="" /> -->
       </div>
     </section>
     <section id="features">
-      <div class="container-fluid">
-        <div><h1>O nama</h1></div>
-        <div class="row row-cols-2 gy-5">
-          <div class="col">
-            <div class="feature-images">
-              <img src="gallery-img/Family-11.jpg" alt="" />
-            </div>
-          </div>
-          <div class="col">
-            <p>
-              Family event place je restoran se nalazi u mirnom delu Beograda,na osunčanoj padini nadomak košutnjačke šume i namenjen organizovanju svih vrsta
-              proslava od 30 do 150 gostiju. U mogucnosti smo da organizujemo sve vrste proslava, od decijih rodjendana i krstenja do svadbi i korporativnih
-              proslava. Family restoran je jedinstven prostor za slavlja u gradu jer Vam pruza mogucnost izbora u kakvom cete okruzenju organizovati vas svecani
-              dan.
-            </p>
-            <!-- <img class="golden-circle rotate circle-prop" src="img/golden-circle.png" alt="" /> -->
-          </div>
-          <div class="col">
-            <div class="feature-images">
-              <img src="gallery-img/Family-13.jpg" alt="" />
-            </div>
-            <div class="col"></div>
-          </div>
-          <div class="col">
-            <p>
+      <div>
+        <h1>O nama</h1>
+      </div>
+      <div class="features">
+        <div class="card" style="width: 18rem">
+          <img src="gallery-img/Family-11.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Velika sala</h5>
+            <p class="card-text">
               Na raspolaganju su vam dve moderno opremljene zatvorene sale. Velika sala je kapaciteta do 100 gostiju, a mala sala je kapaciteta do 50 gostiju.
               Sale su medjusobno povezane sto omogucava i organizaciju vecih  proslava do 150 gostiju. Od ostalih prostora ovog tipa nas izdvaja je otvorena
               terasa sa ocaravajucim pogledom na Avalu, kapaciteta do 50 gostiju.
             </p>
-            <!-- <img class="golden-circle rotate" src="img/golden-circle.png" alt="" /> -->
+            <a href="#" class="btn btn-primary">Galerija</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="gallery-img/Family-31.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Mala sala</h5>
+            <p class="card-text">
+              Kruna nase ponude je nasa zelena oaza, nas vrt, kapaciteta do 50 gostiju. Ovaj prostor je potpuno opremljen za hedonisticko uzivanje sa osecajem
+              bega iz gradske vreve.
+            </p>
+            <a href="#" class="btn btn-primary">Galerija</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="gallery-img/Family-4.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Igraonica</h5>
+            <p class="card-text">
+              Za najmladje i najbitnije goste Family event place je spremio posebno iznenadjenje. Na raspolaganju vam je potpuno opremljena decija igraonica od
+              70m2, sa profesionalnim animatorima koji ce im svaki trenutak proveden u nasem restoranu uciniti nezaboravnim.
+            </p>
+            <a href="#" class="btn btn-primary">Galerija</a>
           </div>
         </div>
       </div>
     </section>
-    <section id="bottom" class="section-dark">
-      <div style="text-align: center; padding: 80px 0 50px">
+    <section id="lokacija">
+      <div>
         <h1 class="text-shadow-black">Nasa lokacija</h1>
       </div>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1734.1860874442618!2d20.435779728292133!3d44.74993840452094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7176a56fdde7%3A0xe5c162c5653e009b!2sFamily%20Event%20Place!5e0!3m2!1ssr!2srs!4v1682285491176!5m2!1ssr!2srs"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-      <div class="copyright">
-        <p>Copyright ©️ "Family Event Center"</p>
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1734.1860874442618!2d20.435779728292133!3d44.74993840452094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7176a56fdde7%3A0xe5c162c5653e009b!2sFamily%20Event%20Place!5e0!3m2!1ssr!2srs!4v1682285491176!5m2!1ssr!2srs"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+    <section id="copyright">
+      <div>
+        <p>Copyright "Family Event Centre"</p>
       </div>
     </section>
     <script
