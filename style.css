@@ -91,6 +91,7 @@ p {
   color: var(--color-secondary);
 }
 #lokacija h1 {
+  color: var(--color-secondary);
   padding-bottom: 50px;
 }
 
@@ -117,6 +118,9 @@ p {
   #features .features {
     flex-direction: column;
     align-items: center;
+  }
+  #lokacija h1 {
+    color: var(--color-secondary);
   }
   #lokacija iframe {
     width: auto;

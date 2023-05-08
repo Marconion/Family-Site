@@ -91,6 +91,7 @@ p {
   background: url(img/pexels-golden-jojo-2409038.jpg) no-repeat center center/cover;
   color: var(--color-secondary);
   h1 {
+    color: var(--color-secondary);
     padding-bottom: 50px;
   }
 }
@@ -122,6 +123,9 @@ p {
   }
 
   #lokacija {
+    h1 {
+      color: var(--color-secondary);
+    }
     iframe {
       width: auto;
     }
