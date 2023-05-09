@@ -20,9 +20,9 @@ p {
 }
 
 .navbar {
-  position: relative;
+  position: absolute;
   width: 100%;
-  padding: 10px 70px;
+  padding: 15px 70px;
   background-color: var(--color-secondary);
 }
 .navbar .navbar-brand {
@@ -30,9 +30,25 @@ p {
 }
 .navbar .nav-link {
   color: var(--color-primary);
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .navbar .nav-link .active {
   color: #afa084;
+}
+.navbar .nav-link:hover {
+  color: white;
+  animation: scale 0.2s forwards;
+}
+@keyframes scale {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.1;
+  }
 }
 
 #navbarNav {
@@ -42,8 +58,10 @@ p {
 #title {
   display: flex;
   flex-direction: column;
+  position: relative;
   height: 100vh;
-  background: url(img/pexels-golden-jojo-2409038.jpg) no-repeat center center/cover;
+  z-index: -10;
+  background: url("img/pexels-golden-jojo-2409038.jpg") no-repeat center center/cover;
 }
 #title .logo {
   display: flex;
@@ -53,6 +71,13 @@ p {
 }
 #title .logo .logo-img {
   width: 40%;
+}
+#title p {
+  position: absolute;
+  bottom: 20px;
+  font-size: 25px;
+  color: white;
+  text-align: center;
 }
 
 #features {
@@ -110,6 +135,7 @@ p {
     height: 100%;
   }
   #title .logo .logo-img {
+    display: none;
     width: 100%;
   }
   #features {
