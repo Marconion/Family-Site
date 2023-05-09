@@ -80,7 +80,10 @@ p {
     }
   }
   p {
-    position: absolute;
+    // position: absolute;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
     bottom: 20px;
     font-size: 25px;
     color: white;
@@ -137,6 +140,7 @@ p {
   .navbar {
     padding: 10px 0;
   }
+
   #title {
     background: url("img/Logo\ uspravni\ sa\ poz.jpeg") no-repeat center center/cover;
 
