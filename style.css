@@ -118,6 +118,15 @@ p {
   color: var(--color-secondary);
   padding-bottom: 50px;
 }
+#lokacija iframe {
+  padding-bottom: 50px;
+}
+#lokacija p {
+  bottom: 20px;
+  font-size: 15px;
+  color: var(--color-secondary);
+  text-align: center;
+}
 
 #copyright {
   background-color: var(--color-secondary);
@@ -149,5 +158,12 @@ p {
   }
   #lokacija iframe {
     width: auto;
+    padding-bottom: 50px;
+  }
+  #lokacija p {
+    bottom: 20px;
+    font-size: 15px;
+    color: var(--color-secondary);
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
