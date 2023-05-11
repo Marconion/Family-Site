@@ -153,20 +153,10 @@ p {
       display: inline-block;
       color: var(--color-secondary);
       transition: all 0.2s ease-in-out;
-      // scale: 1;
-      // transition: scale 2s;
     }
     a:hover {
       color: white;
       scale: 1.2;
-      // @keyframes transform {
-      //   0% {
-      //     scale: 1;
-      //   }
-      //   100% {
-      //     scale: 1.2;
-      //   }
-      // }
     }
   }
 }
