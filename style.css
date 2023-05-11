@@ -133,7 +133,16 @@ p {
   text-align: center;
 }
 #lokacija .social-media-links i {
-  padding: 10px 20px;
+  margin: 10px 20px;
+}
+#lokacija .social-media-links a {
+  display: inline-block;
+  color: var(--color-secondary);
+  transition: all 0.2s ease-in-out;
+}
+#lokacija .social-media-links a:hover {
+  color: white;
+  scale: 1.2;
 }
 
 #copyright {
