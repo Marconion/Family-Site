@@ -140,23 +140,32 @@ p {
     padding-bottom: 50px;
   }
   p {
-    bottom: 20px;
+    // bottom: 20px;
+    margin-bottom: 50px;
     font-size: 15px;
     color: var(--color-secondary);
     text-align: center;
   }
-  .social-media-links {
-    i {
-      margin: 10px 20px;
+  .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      margin-bottom: 0px;
     }
-    a {
-      display: inline-block;
-      color: var(--color-secondary);
-      transition: all 0.2s ease-in-out;
-    }
-    a:hover {
-      color: white;
-      scale: 1.2;
+    .social-media-links {
+      a {
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 20px;
+        color: var(--color-secondary);
+        transition: all 0.2s ease-in-out;
+      }
+      a:hover {
+        color: white;
+        scale: 1.2;
+      }
     }
   }
 }
@@ -164,7 +173,13 @@ p {
   background-color: var(--color-secondary);
   text-align: center;
   padding: 20px 0;
+  p {
+    margin-bottom: 0;
+  }
 }
+
+///////////////
+//Responsivness
 
 @media (max-width: 992px) {
   .navbar {
