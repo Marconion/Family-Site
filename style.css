@@ -98,9 +98,15 @@ p {
   box-shadow: 5px 5px 10px grey;
 }
 #features .card .btn-primary {
-  background-color: #1d301d;
+  background-color: var(--color-primary);
   color: var(--color-secondary);
   border: none;
+  transition: all 0.3s;
+}
+#features .card .btn-primary:hover {
+  background-color: var(--color-third);
+  color: var(--color-primary);
+  scale: 1.1;
 }
 #features .features {
   width: 100%;
@@ -144,7 +150,7 @@ p {
   display: inline-block;
   align-items: center;
   justify-content: center;
-  margin: 10px 20px;
+  margin: 10px 30px;
   color: var(--color-secondary);
   transition: all 0.2s ease-in-out;
 }
