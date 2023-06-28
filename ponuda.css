@@ -29,6 +29,13 @@
   color: white;
 }
 
+.divider {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 50%;
+}
+
 .p-3 {
   font-size: 20px;
   font-style: italic;
@@ -57,4 +64,13 @@ button a:visited {
   float: inline-start;
   text-align: center;
   margin: 50px 0 25px;
+}
+
+@media screen and (max-width: 992px) {
+  .divider {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%;
+  }
 }/*# sourceMappingURL=ponuda.css.map */
